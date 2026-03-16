@@ -1,0 +1,23 @@
+/* 1. Primero las fuentes externas */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;1,900&family=Bebas+Neue&display=swap');
+
+/* 2. Después las directivas de Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 3. Tus variables y estilos personalizados abajo */
+:root {
+    --looking-dark: #0A0A0A;
+    --looking-red: #cc3322;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; /* Para que el Navbar no tape los títulos */
+}
+
+body {
+    @apply bg-looking-dark text-white font-barlow;
+    background-attachment: fixed;
+}
